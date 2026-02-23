@@ -7,9 +7,11 @@
 int main() {
 
 	
-	MyString s1("Hello");
-	MyString s2(" World");
-	s1 = s2;
-	s1.print();
+	m::string s1("Hello");
+	m::string s2("Hello");
+	m::string s3 = (s1 + s2);
+
+	if (s1 == s2) std::cout << s1[0];
+	
 
 }
